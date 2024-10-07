@@ -58,11 +58,11 @@ public class Military implements Listener {
                     Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "lp user " + bazikon.getName() + " permission settemp School-rp.exam.military.question3 true 30s");
 
                     // Soal baadi
-                    bazikon.sendMessage(color("&6[Question] 3: &fSiyasat mali gheyr mamol chist?."));
-                    bazikon.sendMessage(color("&6[Question] 3: &f1- be siyasat hayi ke server migozarad va mamoli bashand migoyand."));
-                    bazikon.sendMessage(color("&6[Question] 3: &f2- dar sorati ke az rahe mokhtalefi mesl abuse ya residan be servat ziyad az tarafe harkas va barashon tojihi nabashe."));
-                    bazikon.sendMessage(color("&6[Question] 3: &f3- estefade az client haye gheyr mojaz mesl fabric va forge va chand nemone digar."));
-                    bazikon.sendMessage(color("&6[Question] &fbaraye pasokh faghat adad javab ra ersal konid."));
+                    bazikon.sendMessage(color("&6[Military-Test] 3: &fSiyasat mali gheyr mamol chist?."));
+                    bazikon.sendMessage(color("&6[Military-Test] 3: &f1- be siyasat hayi ke server migozarad va mamoli bashand migoyand."));
+                    bazikon.sendMessage(color("&6[Military-Test] 3: &f2- dar sorati ke az rahe mokhtalefi mesl abuse ya residan be servat ziyad az tarafe harkas va barashon tojihi nabashe."));
+                    bazikon.sendMessage(color("&6[Military-Test] 3: &f3- estefade az client haye gheyr mojaz mesl fabric va forge va chand nemone digar."));
+                    bazikon.sendMessage(color("&6[Military-Test] &fbaraye pasokh faghat adad javab ra ersal konid."));
 
                 }
                 else {
