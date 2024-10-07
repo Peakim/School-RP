@@ -12,7 +12,7 @@ public final class School_RP extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
 
-        // Events
+        // Event
         getServer().getPluginManager().registerEvents(new exam_public(this),this);
 
         // Commands
