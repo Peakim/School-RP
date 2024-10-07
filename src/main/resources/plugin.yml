@@ -1,0 +1,8 @@
+name: School-RP
+version: '${project.version}'
+main: org.peakimo.schoolrp.School_RP
+api-version: '1.16'
+commands:
+  exam:
+    description: get exam from player!
+    usage: </Exam>
