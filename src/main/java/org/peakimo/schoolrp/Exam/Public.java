@@ -10,11 +10,11 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.inventory.ItemStack;
 import org.peakimo.schoolrp.School_RP;
 
-public class exam_public implements Listener {
+public class Public implements Listener {
 
     private final School_RP plugin;
 
-    public exam_public(School_RP plugin) {
+    public Public(School_RP plugin) {
         this.plugin = plugin;
 
     }
