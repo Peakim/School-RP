@@ -1,8 +1,9 @@
 package org.peakimo.schoolrp;
 
 import org.bukkit.plugin.java.JavaPlugin;
+import org.peakimo.schoolrp.Exam.Public;
 import org.peakimo.schoolrp.Exam.exam_command;
-import org.peakimo.schoolrp.Exam.exam_public;
+import org.peakimo.schoolrp.Exam.Public;
 
 public final class School_RP extends JavaPlugin {
 
@@ -13,7 +14,7 @@ public final class School_RP extends JavaPlugin {
         // Plugin startup logic
 
         // Events
-        getServer().getPluginManager().registerEvents(new exam_public(this),this);
+        getServer().getPluginManager().registerEvents(new Public(this),this);
 
         // Commands
         getCommand("exam").setExecutor(new exam_command());
