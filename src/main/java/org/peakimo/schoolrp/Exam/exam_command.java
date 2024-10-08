@@ -41,6 +41,12 @@ public class exam_command implements CommandExecutor {
 
             }
 
+            if (bazikon.hasPermission("School-rp.exam.military.question1")) {
+
+                bazikon.sendMessage(color("You have already started the exam!"));
+
+            }
+
 
         }
     }
