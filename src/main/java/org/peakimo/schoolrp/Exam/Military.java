@@ -35,9 +35,9 @@ public class Military implements Listener {
                     Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "lp user " + bazikon.getName() + " permission settemp School-rp.exam.military.question2 true 30s");
 
                     // Soal baadi
-                    bazikon.sendMessage(color("&6[Military-Test] 2: &fAya sarbaz mitavanad dar shahr ya makan ha azadane begardad??"));
+                    bazikon.sendMessage(color("&6[Military-Test] 2: &fAya sarbaz mitavanad dar shahr ya makan ha azadane begardand??"));
                     bazikon.sendMessage(color("&6[Military-Test] 1- bale"));
-                    bazikon.sendMessage(color("&6[Military-Test] 1- kheyr"));
+                    bazikon.sendMessage(color("&6[Military-Test] 2- kheyr"));
                     bazikon.sendMessage(color("&6[Military-Test] Pasokh ra ba ersal adad [1,2] vared konid."));
 
 
@@ -51,23 +51,62 @@ public class Military implements Listener {
             // Question 2
             if (bazikon.hasPermission("School-rp.exam.military.question2")) {
 
-                if (message.equalsIgnoreCase("baltop")) {
+                if (message.equalsIgnoreCase("2")) {
 
                     bazikon.sendMessage(color("&aPasokh shoma sahih bod."));
                     Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "lp user " + bazikon.getName() + " permission unsettemp School-rp.exam.military.question2");
                     Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "lp user " + bazikon.getName() + " permission settemp School-rp.exam.military.question3 true 30s");
 
                     // Soal baadi
-                    bazikon.sendMessage(color("&6[Military-Test] 3: &fSiyasat mali gheyr mamol chist?."));
-                    bazikon.sendMessage(color("&6[Military-Test] 3: &f1- be siyasat hayi ke server migozarad va mamoli bashand migoyand."));
-                    bazikon.sendMessage(color("&6[Military-Test] 3: &f2- dar sorati ke az rahe mokhtalefi mesl abuse ya residan be servat ziyad az tarafe harkas va barashon tojihi nabashe."));
-                    bazikon.sendMessage(color("&6[Military-Test] 3: &f3- estefade az client haye gheyr mojaz mesl fabric va forge va chand nemone digar."));
-                    bazikon.sendMessage(color("&6[Military-Test] &fbaraye pasokh faghat adad javab ra ersal konid."));
+                    bazikon.sendMessage(color("&6[Military-Test] 3: &fCommand bazrasi badani zendanian"));
+                    bazikon.sendMessage(color("&6[Military-Test] 1-&f /suspect (player)"));
+                    bazikon.sendMessage(color("&6[Military-Test] 2-&f /wanted add (player)"));
+                    bazikon.sendMessage(color("&6[Military-Test] 3-&f /invsee (player)"));
+                    bazikon.sendMessage(color("&6[Military-Test] Pasokh ra ba ersal adad [1,2,3] vared konid."));
 
                 }
                 else {
                     bazikon.sendMessage(color("&cPasokh ghalat bod! mojadad bayad emtehan dahid!"));
                     Bukkit.dispatchCommand(Bukkit.getConsoleSender(),"lp user " + bazikon.getName() + " permission unsettemp School-rp.exam.military.question2");
+                }
+            }
+
+            // Question 3
+            if (bazikon.hasPermission("School-rp.exam.military.question3")) {
+
+                if (message.equalsIgnoreCase("1")) {
+
+                    bazikon.sendMessage(color("&aPasokh shoma sahih bod."));
+                    Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "lp user " + bazikon.getName() + " permission unsettemp School-rp.exam.military.question3");
+                    Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "lp user " + bazikon.getName() + " permission settemp School-rp.exam.military.question4 true 30s");
+
+                    // Soal baadi
+                    bazikon.sendMessage(color("&6[Military-Test] 3: &fAgar shahrvandi jeloye FBI ya rank balatar eghdam be koshtan va tir andazi kard mitavanad be fard marbot wanted dahad?"));
+                    bazikon.sendMessage(color("&6[Military-Test] 1-&f Sahih"));
+                    bazikon.sendMessage(color("&6[Military-Test] 2-&f Ghalat"));
+                    bazikon.sendMessage(color("&6[Military-Test] Pasokh ra ba ersal adad [1,2] vared konid."));
+
+                }
+                else {
+                    bazikon.sendMessage(color("&cPasokh ghalat bod! mojadad bayad emtehan dahid!"));
+                    Bukkit.dispatchCommand(Bukkit.getConsoleSender(),"lp user " + bazikon.getName() + " permission unsettemp School-rp.exam.military.question3");
+                }
+            }
+            // Winner
+            if (bazikon.hasPermission("School-rp.exam.military.question4")) {
+
+                if (message.equalsIgnoreCase("1")) {
+
+                    Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "lp user " + bazikon.getName() + " permission unsettemp School-rp.exam.military.question3");
+                    Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "lp user " + bazikon.getName() + " parent addtemp sarbaz 60d rp");
+
+                    bazikon.sendMessage(color("&aPasokh shoma sahih bod."));
+                    bazikon.sendMessage(color("&aShoma job sarbaz ra gereftid!"));
+
+                }
+                else {
+                    bazikon.sendMessage(color("&cPasokh ghalat bod! mojadad bayad emtehan dahid!"));
+                    Bukkit.dispatchCommand(Bukkit.getConsoleSender(),"lp user " + bazikon.getName() + " permission unsettemp School-rp.exam.military.question4");
                 }
             }
 
