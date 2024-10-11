@@ -99,6 +99,7 @@ public class Military implements Listener {
 
                     Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "lp user " + bazikon.getName() + " permission unsettemp School-rp.exam.military.question3");
                     Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "lp user " + bazikon.getName() + " parent addtemp sarbaz 60d rp");
+                    Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "lp user " + bazikon.getName() + " parent removetemp daneshjo rp");
 
                     bazikon.sendMessage(color("&aPasokh shoma sahih bod."));
                     bazikon.sendMessage(color("&aShoma job sarbaz ra gereftid!"));

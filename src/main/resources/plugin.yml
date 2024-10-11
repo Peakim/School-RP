@@ -6,3 +6,6 @@ commands:
   exam:
     description: get exam from player!
     usage: </Exam>
+  Schoolrp-reload:
+    description: reload config.yml!
+    usage: </Schoolrp-reload>

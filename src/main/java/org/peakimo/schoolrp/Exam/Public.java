@@ -18,11 +18,14 @@ public class Public implements Listener {
         this.plugin = plugin;
 
     }
+
+    private School_RP instance = School_RP.getInstance();
     @EventHandler
     public void onPlayerChat(AsyncPlayerChatEvent event) {
 
         Player player = event.getPlayer();
         String message = event.getMessage();
+        int rewardheartofsea = instance.getConfig().getInt("rewardcount-heartofthesea");
 
         // Question 1
         // بررسی پیام چت
@@ -101,7 +104,7 @@ public class Public implements Listener {
 
                     // GetReward
                     player.sendMessage(color("&bShoma course khod ra daryaft kardid va barandeh shodid!"));
-                    player.getInventory().addItem(new ItemStack(Material.HEART_OF_THE_SEA,5));
+                    player.getInventory().addItem(new ItemStack(Material.HEART_OF_THE_SEA,rewardheartofsea));
 
 
                 }
